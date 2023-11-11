@@ -1,0 +1,345 @@
+.main {
+    width: 720px;
+    height: 500px;
+}
+
+/* 중앙정렬 */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 양옆정렬 */
+.between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo {
+    margin: 20px 25px;
+    cursor: pointer;
+}
+
+/* main_event */
+.main_event_title {
+    width: 720px;
+    height: 110px;
+    background-color: #f96ee3;
+    text-align: center;
+}
+
+.main_event_title a {
+    text-decoration: none;
+    color: black;
+}
+
+.main_event_title a:hover {
+    color: #fff;
+}
+
+.main_event_title p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.boder_right {
+    border-right: 2px solid black;
+}
+
+.main_event_content {
+    width: 720px;
+    height: 800px;
+    background-image: url(../img/watchBg.jpeg);
+    background-size: cover;
+    background-position: 0px -220px;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    position: relative;
+}
+
+.logo_white {
+    width: 210px;
+    padding: 25px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.date {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main_event_date {
+    width: 680px;
+    height: 100px;
+    margin: 0 20px;
+    border-top: 2px solid #838383;
+    position: absolute;
+    bottom: 0;
+}
+
+.main_event_date p {
+    margin: 0;
+}
+
+.date_box {
+    width: 125px;
+    height: 40px;
+    background-color: #f96ee3;
+    color: black;
+    border-radius: 40px;
+}
+
+.events_nav {
+    width: 720px;
+    height: 50px;
+    text-align: center;
+    background-color: #232323;
+}
+
+.events_nav.fixed {
+    position: fixed;
+    z-index: 999;
+    bottom: auto;
+    top: 0;
+}
+
+.events_nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+.events_nav a:hover {
+    color: #ddd;
+}
+
+.events_nav a.active {
+    color: #f96ee3;
+}
+
+/* section */
+.section {
+    width: 720px;
+    height: 1525px;
+    background-color: #000;
+    padding-top: 120px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.section h3 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.section h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.section h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section p {
+    margin: 0;
+}
+
+.section a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.section a:hover {
+    color: #fff;
+}
+
+.section_btn {
+    width: 650px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #f34edb;
+    margin: auto;
+}
+
+.coupon_box {
+    width: 480px;
+    height: 250px;
+    background-image: url(../img/coupon6.png);
+    opacity: 0.2;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.coupon_box div {
+    width: 120px;
+    height: 120px;
+    background-color: #e0abf8;
+    border-radius: 100%;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 회색버튼 */
+.outBtn {
+    background-color: #666666;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+/* 유의사항 */
+.notice {
+    width: 720px;
+    height: 125px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    padding-left: 40px;
+}
+
+.notice a {
+    color: #a3a3a3;
+    font-size: 25px;
+}
+
+.notice a:hover {
+    color: #fff
+}
+
+.notice a.active {
+    color: #fff
+}
+
+.notice_txt {
+    display: none;
+    position: relative;
+    width: 720px;
+    height: 350px;
+    background-color: #232323;
+    color: #ddd;
+    font-size: 25px;
+}
+
+.notice_txt ul {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%)
+}
+
+.notice_txt li {
+    width: 720px;
+    padding: 10px;
+}
+
+/* 흰색 박스 */
+.lukey_deal_box {
+    width: 640px;
+    /* height: 100px; */
+    background-color: #f1ece9;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 35px;
+}
+
+/* 흔들리는 애니메이션 */
+.vibration {
+    animation: vibration 0.1s infinite;
+}
+
+@keyframes vibration {
+    from {
+        transform: rotate(2deg);
+    }
+
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+.white_box h3 {
+    margin-bottom: 20px;
+}
+
+.box_btn {
+    width: 200px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: #f96ee3;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+
+.lukey_deal_item {
+    width: 580px;
+    height: 420px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: #d7bfb9;
+}
+
+.item_title {
+    width: 220px;
+    height: 50px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+}
+
+/* footer */
+.footer {
+    width: 720px;
+    height: 540px;
+    padding-top: 120px;
+    background-color: #1f1f1f;
+    text-align: center;
+    color: #fff;
+}
+
+.icon_box {
+    font-size: 40px;
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.icon_box p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+swiper-slide {
+    margin-bottom: 20px;
+}
