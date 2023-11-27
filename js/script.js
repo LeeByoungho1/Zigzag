@@ -26,10 +26,6 @@ $(".events_nav a").on("click", function (e) {
     var thisSection = $(".section").eq(index)
     var pos = thisSection.position().top
     $("html, body").animate({ scrollTop: pos }, 100)
-
-    if (index == 1) {
-        vibration($(".lukey_deal_box.between img"), 1200)
-    }
 })
 $(window).on("scroll", function () {
     var scroll = $(window).scrollTop()
